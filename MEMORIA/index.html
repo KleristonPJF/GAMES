@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🧠 Naruteca da Memória</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="tela-inicial" class="tela">
+  <h1>🌀 Naruteca da Memória</h1>
+  <p class="subtitulo">Desafie sua mente ninja!</p>
+  <button onclick="mostrarTelaNivel()">Jogar</button>
+  <button onclick="voltarCentral()">Voltar para a Central de Jogos</button>
+</div>
+
+
+  <div id="tela-nivel" class="tela hidden">
+    <h2>Escolha seu nível</h2>
+    <div class="nivel-container">
+      <button onclick="iniciarJogo('facil')">Genin (Fácil)</button>
+      <button onclick="iniciarJogo('medio')">Chuunin (Médio)</button>
+      <button onclick="iniciarJogo('dificil')">Jounin (Difícil)</button>
+      <button onclick="iniciarJogo('insano')">Hokage (Insano)</button>
+    </div>
+    <button onclick="voltarInicio()">⬅ Voltar</button>
+  </div>
+
+  <div id="tela-jogo" class="tela hidden">
+    <div id="vidas" class="vidas">❤️❤️❤️❤️❤️</div>
+    <div id="game-board" class="game-board"></div>
+    <p id="message"></p>
+    <button onclick="mostrarTelaNivel()">Escolher outro nível</button>
+  </div>
+
+  <div id="tela-vitoria" class="tela hidden">
+  <h2>🎉 Você venceu! Memória afiada como um Sharingan!</h2>
+  <button onclick="iniciarJogo(nivelAtual)">Jogar novamente</button>
+  <button onclick="mostrarTelaNivel()">Escolher outro nível</button>
+  <button onclick="voltarCentral()">Voltar para a Central de Jogos</button>
+</div>
+
+
+  <div id="tela-derrota" class="tela hidden">
+  <h2>💀 Você perdeu todas as vidas!</h2>
+  <p>Treine mais para se tornar um verdadeiro ninja!</p>
+  <button onclick="iniciarJogo(nivelAtual)">Tentar novamente</button>
+  <button onclick="mostrarTelaNivel()">Escolher outro nível</button>
+  <button onclick="voltarCentral()">Voltar para a Central de Jogos</button>
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('./FUNDO.jpg'); /* Naruto wallpaper */
+  background-size: cover;
+  background-position: center;
+  font-family: 'Rubik Mono One', sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 30px 20px;
+  border-radius: 15px;
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  color: #ffcc00;
+  box-shadow: 0 0 15px #ffa500;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 5px black;
+}
+
+.games {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+button {
+  background-color: #ff5722;
+  color: #fff;
+  font-size: 1rem;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+  text-shadow: 1px 1px 2px black;
+}
+
+button:hover {
+  background-color: #e64a19;
+  transform: scale(1.05);
+}

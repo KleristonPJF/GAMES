@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Naruteca - Quiz de Naruto</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Tela Inicial -->
+    <div id="tela-inicial">
+      <h1>Naruteca</h1>
+      <p class="descricao">Você realmente conhece o mundo ninja? 🌀</p>
+      <button id="btn-iniciar">Iniciar Quiz</button>
+      <button id="btn-voltar">Voltar para a Central</button>
+    </div>
+
+    <!-- Tela de Quiz -->
+    <div id="tela-quiz" style="display:none;">
+      <p id="progresso"></p>
+      <div id="quiz"></div>
+      <div id="feedback"></div>
+      <button id="next">Próxima</button>
+    </div>
+
+    <!-- Tela Final -->
+    <div id="tela-final" style="display:none;">
+  <h2>Resultado Final</h2>
+  <p id="resultado"></p>
+  <div class="botoes-finais">
+    <button id="btn-reiniciar">Tentar novamente</button>
+    <button id="btn-voltar-final">Voltar para a Central</button>
+  </div>
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
